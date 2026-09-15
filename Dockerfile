@@ -1,4 +1,6 @@
-## Used only for the docker-smoke CI job. Not meant to be used by the package end-users.
+## WARNING: Not meant to be used by the package end-users.
+## This is used only for the CI workflows (smoke tests).
+
 FROM ghcr.io/gleam-lang/gleam:v1.18.1-erlang-alpine
 
 WORKDIR /app
