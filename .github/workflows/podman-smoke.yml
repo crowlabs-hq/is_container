@@ -1,0 +1,18 @@
+name: Podman smoke test
+
+on:
+  push:
+    branches:
+      - main
+      - test-ci
+  pull_request:
+
+jobs:
+  podman-smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - name: Build image
+        run: podman build --build-arg SMOKE_MODULE=podman_smoke -t is_container-smoke .
+      - name: Run smoke test inside container
+        run: podman run --rm is_container-smoke
