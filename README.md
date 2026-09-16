@@ -1,11 +1,7 @@
 # is_container
 
-> [!WARNING]
-> This is still a work-in-progress
-
-<!--
 [![Package Version](https://img.shields.io/hexpm/v/is_container)](https://hex.pm/packages/is_container)
-[![Hex Docs](https://img.shields.io/badge/hex-docs-ffaff3)](https://is-container.hexdocs.pm/) -->
+[![Hex Docs](https://img.shields.io/badge/hex-docs-ffaff3)](https://is-container.hexdocs.pm/)
 
 
 This package allows you to know whether you're running inside a container.
@@ -30,4 +26,8 @@ pub fn main() -> Nil {
 }
 ```
 
-<!-- Further documentation can be found at <https://is-container.hexdocs.pm/>. -->
+Further documentation can be found at <https://is-container.hexdocs.pm/>.
+
+## License
+
+This project is licensed under the **Apache License 2.0**. See the [LICENSE](./LICENSE) file for details.
